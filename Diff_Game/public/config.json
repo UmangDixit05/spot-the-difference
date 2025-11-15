@@ -1,8 +1,8 @@
 {
     "gameTitle": "Spot the Difference - Topic",
     "images": {
-      "image1": "./spot-the-difference/Image1.jpg",
-      "image2": "./spot-the-difference/Image2.jpg"
+      "image1": "./Image1.jpg",
+      "image2": "./Image2.jpg"
     },
     "differences": [
       { "x": 20, "y": 10, "width": 50, "height": 50 },

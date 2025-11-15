@@ -6,7 +6,7 @@ function App() {
   const [config, setConfig] = useState(null);
 
   useEffect(() => {
-    fetch("/spot-the-difference/config.json")
+    fetch("/config.json")
     .then((res) => {
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
       return res.json();
