@@ -6,9 +6,15 @@ function App() {
   const [config, setConfig] = useState(null);
 
   useEffect(() => {
-    fetch("/config.json")
-      .then(res => res.json())
-      .then(data => setConfig(data));
+    fetch("/spot-the-difference/config.json")
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      return res.json();
+    })
+    .then((data) => setConfig(data))
+    .catch((err) => {
+      console.error("Failed to load config:", err);
+    });
   }, []);
 
   if (!config) return <div className="loading">Loading game...</div>;

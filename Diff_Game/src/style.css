@@ -27,9 +27,8 @@
 .image-wrapper {
     position: relative;
     display: inline-block;
-    width: 500px;
-    height: 300px;
-}
+    max-width: 500px;
+} 
   
 .game-img {
     width: 100%;
@@ -54,7 +53,8 @@
   
 @media (max-width: 600px) {
     .game-img {
-      width: 250px;
+      /* height: 200px; */
+      width: 300px;
     }
 
     .app h1 {
